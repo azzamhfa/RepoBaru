@@ -1,0 +1,45 @@
+@import "Constant.scss";
+.card-auth {
+  box-shadow: black;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  // margin-left: 20p;
+  .title {
+    font-size: 22px;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+  }
+  .content {
+    margin-bottom: 20px;
+  }
+  .action {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  .regist {
+    @media screen and (max-width: $break-medium - 1) {
+      width: 70vw;
+    }
+    @media screen and (min-width: $break-medium) {
+      width: 40vw;
+    }
+    @media screen and (min-width: $break-large) {
+      width: 20vw;
+      height: 36vh;
+    }
+  }
+  .login{
+    @media screen and (max-width: $break-medium - 1) {
+      width: 70vw;
+    }
+    @media screen and (min-width: $break-medium) {
+      width: 40vw;
+    }
+    @media screen and (min-width: $break-large) {
+      width: 20vw;
+      height: 30vh;
+    }
+  }
+}

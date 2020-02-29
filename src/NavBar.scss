@@ -1,0 +1,59 @@
+$break-medium: 768px;
+$break-large: 1024px;
+
+.container-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  padding: 25px 0;
+  margin-bottom: 0px;
+  background-color: #f7f4e6;
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: space-between;
+    @media screen and (max-width: $break-medium - 1) {
+      width: 80vw;
+    }
+    @media screen and (min-width: $break-medium) {
+      width: 70vw;
+    }
+    @media screen and (min-width: $break-large) {
+      width: 50vw;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url(./Montserrat-Regular.ttf) format("truetype");
+    }
+    .app-name {
+      color: black;
+      font-family: Montserrat;
+      font-weight: bold;
+      text-align: center;
+      align-content: center;
+
+      // @media screen and (max-width: $break-medium) {
+      //   font-size: 18px;
+      // }
+      @media screen and (max-width: $break-medium - 1) {
+        font-size: 18px;
+      }
+      @media screen and (min-width: $break-medium) {
+        font-size: 20px;
+      }
+      @media screen and (min-width: $break-large) {
+        font-size: 24px;
+      }
+    }
+  }
+  .tombol {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

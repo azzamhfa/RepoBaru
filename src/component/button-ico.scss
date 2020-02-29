@@ -1,0 +1,34 @@
+$break-medium: 768px;
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  flex: 1;  
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  // text-align: center;
+  @media screen and (max-width: $break-medium) {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+  @media screen and (min-width: $break-medium + 1) {
+    padding: 10px 28px;
+  }
+  &.primary {
+    background-color: #1fa1f2;    
+    text-align: center;
+    color: white;
+  }
+  &.secondary {
+    background-color: #e6ecef;
+    color: black;
+  }
+  &.login{
+    background-color: #1fa1f2;
+    text-align: right;    
+    color: #EFE9CC;
+  }
+}

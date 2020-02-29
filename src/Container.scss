@@ -1,0 +1,26 @@
+$break-medium: 768px;
+$break-large: 1024px;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .content {
+    @media screen and (max-width: $break-medium - 1) {
+      width: 80vw;
+    }
+    @media screen and (min-width: $break-medium) {
+      width: 85vw;
+    }
+    @media screen and (min-width: $break-large) {
+      width: 81vw;
+    }
+  }
+  .TeksLain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 16px 0;
+    align-items: center;
+  }
+}

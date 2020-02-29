@@ -1,0 +1,42 @@
+$break-medium: 768px;
+$break-large: 1024px;
+
+.Promo {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 100px 0;
+  background-color: #deb881;
+  border-radius: 10px;
+  flex-direction: row;
+  // box-shadow: black;
+  .Content {
+    @media screen and (max-width: $break-medium - 1) {
+      width: 80vw;
+    }
+    @media screen and (min-width: $break-medium) {
+      width: 70vw;
+    }
+    @media screen and (min-width: $break-large) {
+      width: 120vw;
+    }
+    .bigSize {
+      padding: 170px 0;
+      @media screen and (max-width: $break-medium - 1) {
+        width: 90vw;
+      }
+      @media screen and (min-width: $break-medium) {
+        width: 70vw;
+      }
+      @media screen and (min-width: $break-large) {
+        width: 90vw;
+      }
+    }
+  }
+  .Coba {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

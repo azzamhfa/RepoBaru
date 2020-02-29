@@ -1,0 +1,31 @@
+$break-medium: 768px;
+$break-large: 1024px;
+
+.Cardboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  .Gambar {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .Deskripsi {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+  // @media screen and (max-width: $break-medium - 1) {
+  //   width: 80vw;
+  // }
+  // @media screen and (min-width: $break-medium) {
+  //   width: 70vw;
+  // }
+  // @media screen and (min-width: $break-large) {
+  //   width: 17vw;
+  // }
+}
